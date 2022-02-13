@@ -9,6 +9,4 @@
 * **[JDK](https://www.oracle.com/java/technologies/downloads/)**
 * **[Eclipse](https://www.eclipse.org/downloads/packages/release/2021-09/r)**
 
-```sh
- Manage By : Sumit 
-```
+## Author : Sumit :technologist:
