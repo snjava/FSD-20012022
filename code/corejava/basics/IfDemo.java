@@ -17,24 +17,24 @@ public class IfDemo
 		{
 			if (percent >= 40 && percent<50)
 			{
-				System.out.println("Congrats!! You got Pass Class.");
+				System.out.println("Congrats!! You got Pass Class."); // 1
 			}
 			else if(percent>=50 && percent<60)
 			{
-				System.out.println("Congrats!! You got Second Class.");
+				System.out.println("Congrats!! You got Second Class."); // 2
 			}
 			else if(percent>=60 && percent<75)
 			{
-				System.out.println("Congrats!! You got First Class.");
+				System.out.println("Congrats!! You got First Class."); // 3
 			}
 			else if(percent>=75 && percent<100) 
 			{
-				System.out.println("Congrats!! You got Dist...");
+				System.out.println("Congrats!! You got Dist..."); // 4
 			}
 		}
 		else
 		{
-			System.out.println("Sorry!! You are FAIL.");
+			System.out.println("Sorry!! You are FAIL."); // 5
 		}
 	}
 }

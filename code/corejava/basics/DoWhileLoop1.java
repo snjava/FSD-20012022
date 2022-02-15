@@ -3,7 +3,7 @@
 */
 public class DoWhileLoop1 {
 	public static void main(String ar[]) {
-		int a = 11;
+		int a = 1;
 		do
 		{
 			System.out.println("Good Morning");

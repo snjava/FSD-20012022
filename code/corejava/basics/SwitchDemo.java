@@ -8,7 +8,7 @@ public class SwitchDemo
 {
 	public static void main(String args[])
 	{
-		int day = 70;
+		int day = 2;
 		switch(day)
 		{
 			default:
