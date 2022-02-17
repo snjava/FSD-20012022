@@ -41,7 +41,7 @@ public class Calculation
 	} 
 
 	// mul (create a method "mul" which will not return any thing but accepts 2 int numbers to perform multiplication)
-	public void mul(int a, int b)
+	void mul(int a, int b)
 	{
 		int ans = a * b;
 		System.out.println("Mul : " + ans);
