@@ -15,13 +15,13 @@ class Employee
 	private int empId;
 	private String name;
 	private int age;
+	private double salary;
 	
 	//=====Setter Methods=====
 	public void setId(int id) {
 		this.empId = id;
 	}
 	public void setName(String name) {
-		
 		this.name = name;
 	}
 	public void setAge(int age) {
@@ -32,6 +32,10 @@ class Employee
 			System.exit(0); // terminate the program manually 
 		}
 	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	
 	
 	//======Getter Methods=====
 	public int getId() {
@@ -42,6 +46,9 @@ class Employee
 	}
 	public int getAge() {
 		return age;
+	}
+	public double getSalary() {
+		return salary;
 	}
 	
 	//======Member Function======
