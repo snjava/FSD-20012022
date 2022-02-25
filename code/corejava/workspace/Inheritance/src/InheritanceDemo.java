@@ -15,10 +15,10 @@ public class InheritanceDemo {
 		javaDev.id = 122;
 		javaDev.salary = 33434.34;
 		javaDev.langKnown = "Core Java, Adv,Java, Spring, Html, JS";
-		javaDev.getEmpInfo();
+		javaDev.getEmpInfo();	
 	}
 }
-class Person extends Object {
+class Person {
 	String name;
 	String city;
 	int age;
