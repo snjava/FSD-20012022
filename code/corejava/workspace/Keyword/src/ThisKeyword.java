@@ -6,7 +6,7 @@ public class ThisKeyword {
 }
 
 class Student {
-	int id = 12;
+	int id = 12; // instance Variable
 	public Student() {
 		this(12, "Xyz"); // call constructor using this keyword
 		System.out.println("This is no Param Constructor");
