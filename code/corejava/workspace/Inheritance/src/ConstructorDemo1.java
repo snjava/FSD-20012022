@@ -25,6 +25,10 @@ class EmpInfo {
 		this.id = id;
 		this.name = name;
 	}
+	/*public EmpInfo(String name, int id) { // 2 param
+		this.id = id;
+		this.name = name;
+	}*/
 	public EmpInfo(int id, String name, double salary) { // 3 param
 		this(id,name);
 		this.salary = salary;
