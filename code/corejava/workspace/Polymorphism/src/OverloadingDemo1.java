@@ -20,7 +20,10 @@ public class OverloadingDemo1 {
 	}
 }
 class Addition {
-	public static int add(int a, int b) {  // 1
+	static {
+		System.out.println("This is static block");
+	}
+	public final static int add(int a, int b) {  // 1
 		int ans = a + b;
 		System.out.println("2 int addition : " + ans);
 		return ans;
