@@ -3,10 +3,14 @@ import java.util.ArrayList;
 
 public class ArrayListDemo1 {
 	public static void main(String[] args) {
+		char ch = 'A';
 		ArrayList list = new ArrayList();
 		list.add("Abcd");
 		list.add(45.34);
 		list.add(123);
+		list.add(45.34);
+		list.add(ch);
+		list.add("Abcd");
 		
 		ArrayList list1 = new ArrayList();
 		list1.add("Xyz");
