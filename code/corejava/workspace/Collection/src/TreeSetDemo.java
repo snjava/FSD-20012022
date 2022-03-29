@@ -12,7 +12,7 @@ public class TreeSetDemo {
 		set.add(765);
 		set.add(987);
 		set.add(121);
-		
+
 		System.out.println(set);
 		
 		System.out.println("Smallest : "+set.first());
@@ -35,7 +35,6 @@ public class TreeSetDemo {
 		Iterator it = set.iterator();
 		//it.hasNext(); // it check for the next method present or not.
 		//it.next(); // it jumps on the next value and also return the value.
-		
 		
 		while(it.hasNext()) {
 			System.out.println(it.next());
