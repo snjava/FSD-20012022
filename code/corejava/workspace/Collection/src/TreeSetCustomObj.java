@@ -13,7 +13,7 @@ public class TreeSetCustomObj {
 		SortBySalary salarySort = new SortBySalary();
 		SortByName nameSort = new SortByName();
 		
-		TreeSet set = new TreeSet(nameSort);
+		TreeSet<Employee> set = new TreeSet<Employee>(nameSort);
 		set.add(e1);
 		set.add(e2);
 		set.add(e3);
