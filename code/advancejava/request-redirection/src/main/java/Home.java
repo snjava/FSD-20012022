@@ -16,7 +16,14 @@ public class Home extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		String userName = request.getParameter("uname");
+		
+		String email = (String) request.getAttribute("user-email");
+		String contact = (String) request.getAttribute("user-contact");
+		
+		
 		out.print("<h1>Welcome User, "+userName+" </h1>");
+		out.print("<h3>Email : "+email+" </h3>");
+		out.print("<h3>Contact : "+contact+" </h3>");
 	}
 
 }

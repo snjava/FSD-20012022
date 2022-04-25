@@ -16,8 +16,13 @@ public class Validate extends HttpServlet {
 		String userName = request.getParameter("uname");
 		String password = request.getParameter("pass");
 		
+		String email = "admin@gmail.com";
+		String contact = "9988009988";
+		
 		if("Admin".equals(userName) && "Admin123".equals(password))
 		{
+			request.setAttribute("user-email", email);
+			request.setAttribute("user-contact", contact);
 			RequestDispatcher rd = request.getRequestDispatcher("user-home");
 			rd.forward(request, response);
 		}
