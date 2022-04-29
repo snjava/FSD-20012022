@@ -12,6 +12,11 @@
 		<hr>
 		<h3>User Address Details</h3>
 		<form action="educational-info.jsp">
+		
+			<input type="hidden" name="name" value="<%=request.getParameter("name")%>">
+			<input type="hidden" name="email" value="<%=request.getParameter("email")%>">
+			<input type="hidden" name="contact" value="<%=request.getParameter("contact")%>">
+		
 			Enter City: <input type="text" name="city"><br>
 			<br> Enter Pin code: <input type="text" name="pincode"><br>
 			<br> Enter State: <input type="text" name="state"><br>

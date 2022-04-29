@@ -12,6 +12,15 @@
 		<hr>
 		<h3>User Educational Details</h3>
 		<form action="preview.jsp">
+		
+			<input type="hidden" name="name" value="<%=request.getParameter("name")%>">
+			<input type="hidden" name="email" value="<%=request.getParameter("email")%>">
+			<input type="hidden" name="contact" value="<%=request.getParameter("contact")%>">
+			<input type="hidden" name="city" value="<%=request.getParameter("city")%>">
+			<input type="hidden" name="pincode" value="<%=request.getParameter("pincode")%>">
+			<input type="hidden" name="state" value="<%=request.getParameter("state")%>">
+		
+		
 			Enter Title: <input type="text" name="title"><br> <br>
 			Enter Passing Year: <input type="text" name="year"><br>
 			<br> Enter Percentage: <input type="text" name="percent"><br>
