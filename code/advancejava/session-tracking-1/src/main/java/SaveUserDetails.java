@@ -19,6 +19,9 @@ public class SaveUserDetails extends HttpServlet {
 		
 		try {
 			
+			
+			//System.out.println(PropLoader.getValue("url"));
+			
 			// DB connection
 			// Insert data into DB		
 			// redirect to personal-info.jsp
