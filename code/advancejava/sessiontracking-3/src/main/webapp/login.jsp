@@ -8,31 +8,11 @@
 </head>
 <body>
 
-<div align="left">
-	<h2>Recent Login</h2>
-	
-	<%
-		Cookie cks[] = request.getCookies(); // to get the cookies sent from client side
-		String recentUser = "";
-		if(cks != null) {
-			for(Cookie c : cks) {
-				if("user".equals(c.getName())) {
-					recentUser = c.getValue();
-				}
-			}
-		}
-	%>
-	
-	<h3><%= recentUser %></h3>
-	
-	
-</div>
-
 <div align="center">
 	<h2>User Login</h2>
 	
 	<%
-		String code = request.getParameter("c");
+		String code = request.getParameter("code");
 		if(code!=null && code.equals("401")) {
 	%>
 		<h3 style="color: red">Invalid User Name or Password</h3>
