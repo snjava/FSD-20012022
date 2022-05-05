@@ -11,7 +11,7 @@
 <div align="left">
 	<h2>Recent Login</h2>
 	
-	<%
+	<%-- <%
 		Cookie cks[] = request.getCookies(); // to get the cookies sent from client side
 		String recentUser = "";
 		if(cks != null) {
@@ -21,10 +21,11 @@
 				}
 			}
 		}
-	%>
+	%> --%>
 	
-	<h3><%= recentUser %></h3>
+	<%-- <h3><%= recentUser %></h3> --%>
 	
+	<h3>${cookie.user.value}</h3>
 	
 </div>
 

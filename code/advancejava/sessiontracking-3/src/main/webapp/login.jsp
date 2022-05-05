@@ -13,12 +13,29 @@
 	
 	<%
 		String code = request.getParameter("code");
-		if(code!=null && code.equals("401")) {
-	%>
-		<h3 style="color: red">Invalid User Name or Password</h3>
-	<%		
+		String color ="";
+		String msg = "";
+		if(code!=null) {
+			switch(code){
+				case "401":
+					msg = "Invalid User Name or Password";
+					color = "red";
+				break;
+				
+				case "408":
+					msg = "Your session has been expire. Please login again...";
+					color = "red";
+				break;
+				
+				case "201":
+					msg = "You have been logged out successfully...";
+					color = "green";
+				break;
+			}
 		}
 	%>
+	
+	<h3 style="color: <%=color%>"><%=msg%></h3>
 	
 	<form action="validate" method="post">
 		Enter User Name : <input type="text" name="uname"><br/><br/>

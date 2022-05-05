@@ -7,6 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+<%
+	if(session.getAttribute("user") == null) {
+		response.sendRedirect("login.jsp?code=408");
+	}
+%>
+<div align="right">
+	<h3><a href="logout">Logout</a></h3>
+</div>
+<hr>
 <div align="center">
 	<%-- <%
 		HttpSession s = request.getSession(); // to get the session (you can use implicit object here instead of creating it)
