@@ -8,6 +8,7 @@
 	<groupId>com.institute</groupId>
 	<artifactId>first-maven</artifactId>
 	<version>0.0.1</version>
+	<packaging>jar</packaging>
 
 	<name>first-maven</name>
 
@@ -29,6 +30,21 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.27</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>5.3.20</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>demo.jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+			<scope>system</scope>
+			<systemPath>E:\Batches\IntuTech\FSD-20Jan22\jar\jstl-1.2.jar</systemPath>
 		</dependency>
 
 
