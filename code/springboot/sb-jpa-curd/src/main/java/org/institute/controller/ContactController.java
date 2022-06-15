@@ -1,6 +1,7 @@
 package org.institute.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import org.institute.entity.Contact;
 import org.institute.repository.ContactRepository;
@@ -41,5 +42,31 @@ public class ContactController {
 	public List<Contact> getAllContacts() {
 		return repository.findAll();
 	}
+	
+	
+	@GetMapping("/contact/get-by-name")
+	public Map getContactByName() {
+		return repository.getContactByName();
+	}
+	
+	
+	@GetMapping("/contact/get-by-number")
+	public Contact getContactByNumber(@RequestParam("number") String number) {
+		return repository.getContactByNumber(number);
+	}
+	
+	
+	@GetMapping("/contact/get-todays-birthday")
+	public List<Map> getContactByMonthDay(@RequestParam("month") int month, @RequestParam("day") int day) {
+		return repository.getContactOfBirthDay(month, day);
+	}
+	
+	
+	@PutMapping("/contact/update-number")
+	public String updateContactNumber(@RequestBody Contact contact) {
+		repository.updatePhoneNumber(contact.getPhoneNo(), contact.getId());
+		return "Contact Updated Successfully";
+	}
+	
 
 }
