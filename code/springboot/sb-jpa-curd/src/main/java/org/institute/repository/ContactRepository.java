@@ -29,9 +29,10 @@ public interface ContactRepository extends JpaRepository<Contact, Integer> {
 	@Query(value =  "select * from phbook where month(dob)= :m and day(dob)= :d", nativeQuery = true)
 	public List<Map> getContactOfBirthDay(@Param("m") int month, @Param("d") int day);
 	
-	// update phbook set contact=? where id=?
-	@Transactional
-	@Modifying
+	// update phbook set contact=? where id=?     -> SQL
+	// update Contact set phoneNo=? where id=?     -> HQL
+	@Transactional // to COMMIT the result on successfully execution of query else ROLLBACK the changes
+	@Modifying // to notify spring JPA that the query will modify the data from the table
 	@Query(value = "update Contact set phoneNo= :pn where id= :i")
 	public void updatePhoneNumber(@Param("pn") String number,@Param("i") int id);
 	
