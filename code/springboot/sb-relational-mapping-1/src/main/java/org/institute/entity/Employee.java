@@ -16,7 +16,7 @@ public class Employee {
 	private String contact;
 	private String email;
 	@OneToOne //(One Employee TO One Address)
-	private Address add;
+	private Address add;   // Employee HAS-A Address
 	
 	public int getId() {
 		return id;
